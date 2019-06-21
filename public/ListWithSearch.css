@@ -1,0 +1,34 @@
+#table1{
+    border-collapse: collapse;
+    text-align: center;
+}
+th{
+    width: 100px;
+    padding:0 10px 0 10px;
+    border: 1px solid black;
+    font-weight: bold;
+    height: 50px;
+}
+
+td{
+    width: 100px;
+    padding:0 5px 0 5px;
+    border: 1px solid black;
+    font-weight: inherit;
+    height: 30px;
+}
+
+#searchField{
+    margin: 10px auto;
+}
+
+#newUser{
+    width:30%;
+    margin:20px auto;
+}
+
+#searchTitle{
+    width: 30%;
+    margin: 10px auto;
+    text-align:left;
+}

@@ -1,0 +1,33 @@
+<% include ./partials/header %>
+<h1>Create User</h1>
+<form action="/adduser" method="POST">
+    <div class="container" id="newUser">
+    <div class="form-group">
+        <input type="text" class="form-control" name="user[firstname]" placeholder="firstname">
+    </div>
+
+    <div class="form-group">
+        <input type="text" class="form-control" name="user[lastname]" placeholder="lastname">
+    </div>
+
+    <div class="form-group">
+        <input type="text" class="form-control" name="user[age]" placeholder="age">
+    </div>
+
+    <div class="form-group">
+        <input type="text" class="form-control" name="user[gender]" placeholder="gender">
+    </div>
+
+    <div class="form-group">
+        <input type="text" class="form-control" name="user[grade]" placeholder="grade">
+    </div>
+
+    <div class="form-group">
+        <input type="text" class="form-control" name="user[standard]" placeholder="standard">
+    </div>
+
+    <button class="btn btn-primary">Submit</button>
+</div>
+</form>
+
+<% include ./partials/footer %>
