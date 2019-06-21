@@ -44,7 +44,7 @@ app.post("/search",function(req,res){
     console.log(searchText);
     Userdata.find({
         $or:[
-        {firstname:{$regex:searchText}},{lastname:{$regex:searchText}},{age:{$regex:searchText}},{gender:{$regex:searchText}},{grade:{$regex:searchText}},{standard:{$regex:searchText}}
+        {firstname:{$regex:searchText,$options:'i'}},{lastname:{$regex:searchText,$options:'i'}},{age:{$regex:searchText,$options:'i'}},{gender:{$regex:searchText,$options:'i'}},{grade:{$regex:searchText,$options:'i'}},{standard:{$regex:searchText,$options:'i'}}
         ]
     },function(err,foundData){
         if(err){
