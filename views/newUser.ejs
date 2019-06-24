@@ -1,25 +1,26 @@
 <% include ./partials/header %>
 <h1>Create User</h1>
-<form action="/adduser" method="POST">
+<form action="/adduser" method="POST" onsubmit="validate()">
     <div class="container" id="newUser">
     <div class="form-group">
-        <input type="text" class="form-control" name="user[firstname]" placeholder="firstname">
+        <input type="text" class="form-control" name="user[firstname]" placeholder="firstname" required> 
     </div>
 
     <div class="form-group">
-        <input type="text" class="form-control" name="user[lastname]" placeholder="lastname">
+        <input type="text" class="form-control" name="user[lastname]" placeholder="lastname" required>
     </div>
 
     <div class="form-group">
-        <input type="text" class="form-control" name="user[age]" placeholder="age">
+        <input type="text" class="form-control" name="user[age]" placeholder="age" required>
     </div>
 
     <div class="form-group">
-        <input type="text" class="form-control" name="user[gender]" placeholder="gender">
+        Female: <input type="radio" name="user[gender]" placeholder="gender" value="female">
+        Male: <input type="radio" name="user[gender]" placeholder="gender" value="male">
     </div>
 
     <div class="form-group">
-        <input type="text" class="form-control" name="user[grade]" placeholder="grade">
+        <input type="text" class="form-control" name="user[grade]" placeholder="grade" required>
     </div>
 
     <div class="form-group">
