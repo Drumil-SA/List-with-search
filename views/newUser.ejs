@@ -1,6 +1,6 @@
 <% include ./partials/header %>
 <h1>Create User</h1>
-<form action="/adduser" method="POST" onsubmit="validate()">
+<form action="/adduser" method="POST">
     <div class="container" id="newUser">
     <div class="form-group">
         <input type="text" class="form-control" name="user[firstname]" placeholder="firstname" required> 
@@ -24,7 +24,7 @@
     </div>
 
     <div class="form-group">
-        <input type="text" class="form-control" name="user[standard]" placeholder="standard">
+        <input type="text" class="form-control" name="user[standard]" placeholder="standard" required>
     </div>
 
     <button class="btn btn-primary">Submit</button>
