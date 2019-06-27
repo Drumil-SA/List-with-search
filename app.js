@@ -47,7 +47,6 @@ app.post("/adduser", function (req, res) {
 
 app.post("/search", function (req, res) {
     var searchText = req.body.searchField;
-    console.log(searchText);
     Userdata.find({
         $or: [
             { firstname: { $regex: searchText, $options: 'i' } }, { lastname: { $regex: searchText, $options: 'i' } }, { age: { $regex: searchText, $options: 'i' } }, { gender: { $regex: searchText, $options: 'i' } }, { grade: { $regex: searchText, $options: 'i' } }, { standard: { $regex: searchText, $options: 'i' } }
